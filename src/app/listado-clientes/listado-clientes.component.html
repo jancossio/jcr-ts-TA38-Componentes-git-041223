@@ -1,0 +1,9 @@
+<h1>Listado clientes</h1>
+
+<div class="row">
+    <div class="col">
+        @for (cliente of clientes; track $index) {
+            <p> {{$index+1}} | {{ cliente[0] }} | {{ cliente[1] }} | {{ cliente[2] }} | {{ cliente[3] }}</p>
+        }
+    </div>
+</div> 
